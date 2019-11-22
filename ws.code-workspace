@@ -9,5 +9,12 @@
 		{
 			"path": "libs/styles"
 		}
-	]
+	],
+	"settings": {
+		"eslint.packageManager": "yarn",
+		"eslint.lintTask.enable": true,
+		"eslint.options": {
+			"configfile": "./.eslintrc"
+		}
+	}
 }

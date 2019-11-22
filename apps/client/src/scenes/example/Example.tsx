@@ -11,11 +11,11 @@ const Example: React.FC = () => {
     }
   }
   `,
-  });
-  
-  if (result.error) return <div>There was an error!</div>
-  
-  if (result.fetching) return <div>Fetching!</div>
+	});
+
+	if (result.error) return <div>There was an error!</div>;
+
+	if (result.fetching) return <div>Fetching!</div>;
 
 	return (
 		<div>
