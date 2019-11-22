@@ -1,0 +1,14 @@
+{
+  "name": "test-yarn-ws",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.19.0"
+  }
+}

@@ -1,0 +1,23 @@
+$global-font-size: 16px !default;
+$global-line-height: $global-font-size * 1.5 !default;
+
+$global-spacing-unit: 16px !default;
+
+$global-spacing-unit-xtiny: 0.125;
+$global-spacing-unit-tiny: 0.25;
+$global-spacing-unit-small: 0.5;
+$global-spacing-unit-med: 1.5;
+$global-spacing-unit-large: 2;
+$global-spacing-unit-med-huge: 3;
+$global-spacing-unit-huge: 4;
+$global-spacing-unit-massive: 8;
+
+$spacing-xxs: round($global-spacing-unit * $global-spacing-unit-xtiny);
+$spacing-xs: round($global-spacing-unit * $global-spacing-unit-tiny);
+$spacing-s: round($global-spacing-unit * $global-spacing-unit-small);
+$spacing-m: round($global-spacing-unit * $global-spacing-unit);
+$spacing-mx: round($global-spacing-unit * $global-spacing-unit-med);
+$spacing-l: round($global-spacing-unit * $global-spacing-unit-large);
+$spacing-xl: round($global-spacing-unit * $global-spacing-unit-med-huge);
+$spacing-xxl: round($global-spacing-unit * $global-spacing-unit-huge);
+$spacing-xxxl: round($global-spacing-unit * $global-spacing-unit-massive);
