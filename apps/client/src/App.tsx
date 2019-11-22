@@ -6,7 +6,7 @@ import Example from './scenes/example/Example';
 import { createClient, Provider, defaultExchanges } from 'urql';
 
 const client = createClient({
-	url: 'http://localhost:3000/graphql',
+	url: 'http://localhost:3001/graphql',
 	exchanges: [...defaultExchanges],
 });
 
