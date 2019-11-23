@@ -1,13 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
+import { SubscriptionClient } from 'subscriptions-transport-ws';
+
 import './App.scss';
 import Example from './scenes/example/Example';
 
-import { createClient, Provider, defaultExchanges } from 'urql';
+import { createClient, Provider, defaultExchanges, subscriptionExchange } from 'urql';
+
+const subscriptionClient = new SubscriptionClient(
+  'ws://localhost:3001/graphql',
+  {}
+);
 
 const client = createClient({
 	url: 'http://localhost:3001/graphql',
-	exchanges: [...defaultExchanges],
+	exchanges: [...defaultExchanges, subscriptionExchange({forwardSubscription: operation => subscriptionClient.request(operation),})],
+
 });
 
 const App: React.FC = () => {

@@ -12,3 +12,7 @@ type Cat {
 type Query {
   cat: Cat!
 }
+
+type Subscription {
+  cats: Cat!
+}
